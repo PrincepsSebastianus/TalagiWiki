@@ -451,34 +451,24 @@ ul{
 .bott1 {
 	position: absolute;
     width: 300px;
-    height: 100px; 
-	background-image: url('Img/Bott/Bott1.png');
+    height: 78px; 
+	/*background-image: url('Img/Bott/Bott1.png');*/
     border: none; 
     cursor: pointer; 
     color: black; 
     background: rgba(0,0,0,0);
-	transform: translateX(-100%);
+	transform: translateX(-50%);
 	justify-content: center; 
+	z-index: 4;
 }
 
-.bott1{
-	position: absolute;
-    width: 300px;
-    height: 100px; 
-	background-image: url('Img/Bott/Bott1.png');
-    border: none; 
-    cursor: pointer; 
-    color: black; 
-    background: rgba(0,0,0,0);
-	transform: translateX(-100%);
-	justify-content: center; 
-}
 
 .bott1 img{
 	position: absolute;
     width: 300px;
     height: 100px;
     border: none; 
+	transform: translate(-50%,-50%);
     cursor: pointer; 
     text-align: center; 
     color: black; 
@@ -491,13 +481,14 @@ ul{
 	display: grid;
 	position: absolute;
 	place-items: center;
-    transform: translate(279px, 10%);
+    transform: translate(-1%, -86%);
     color: black;
     font-family: Helvetica;
     font-size: 30px;
     font-weight: bold;
+	width: 100%;
+	height: 100%;
     pointer-events: none;
-	width: 10%;
 	justify-content: center; 
 	align-items: center;
 }
