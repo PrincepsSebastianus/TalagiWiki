@@ -1,381 +1,197 @@
-﻿<html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Yáranie | Regni | TalagiWiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Img/Icons/Logo.png">
+		<link rel="stylesheet" type="text/css" href="Main.css"></link>
+        <link rel="stylesheet" type="text/css" href="DarkModeButton.css"></link>
+    </head>
+    <body>  
+        <div class="wrapper">
+            <img class="bg" src="Img/bg.png"></img>
+            <div class="undertop"></div>
+            <a href="index.html"><img class="logo" src="Img/Icons/Logo.png"></img></a>
 
-	<!--
+            <div class="alert-boxBgBg" id="alertBox"><div class="alert-boxBg">
+                <div class="alert-box">
+                    <p>Accetta i nostri Cookies per accedere alla wiki, essi saranno utilizzati 
+                        al solo scopo statistico dal team di sviluppo per migliorare il sito. Clicca <a href="Cookie.php" class="link" style="color: var(--standard-bgcolor);">qui</a>
+                         per visualizzare i dati del server.
+                    </p>
+                    <button id="confirmButton">
+                        Accetta
+                    </button>
+                </div>
+            </div></div>
 
-	Colori: 
+            <p class="top"><a href="index.html" class="top">&nbspHOME&nbsp</a></p>
+            <p class="top"><a href="Mappe.html" class="top">&nbspMAPPE&nbsp</a></p>
+            <p class="top"><a href="Arts.html" class="top">&nbspARTS&nbsp</a></p>
 
-	Beige: 	#f2e1da
-	Rosso: 	#79190e
-	Blu:	#103956
-	Verde: 	#3f5736
+            <div class="search-box">
+                <div class="row">
+                    <input class="search-bar" type="text" id="input-box" placeholder="Cerca" autocomplete="off">
+                </div>
+                <div class="result-box">
+                   
+                </div>
+                <img class="search-lense" src="Img/Icons/Search.svg"></img>
+            </div>
 
-	-->
+            <a href="login.html"><img class="login" src="Img/Icons/Profile.png"><img></a>
 
-	<head>
+            <div class="side-contentBgImg"><img src="Img/Banners/Minassaule.png"><p>Stemma di Yáranie</p></div>
 
-		<title>Yáranië | TalagiWiki</title>
-		<link rel="icon" type="image/x-icon" href="Img/Logo.png">
-		<link rel="stylesheet" type="text/css" href="Stile1.css"></link>
-	
-	</head>
-
-	<body>
-		<div class="bottLogo">
-		<a href="Homepage.html" class="logo1">
-			<img src="Img/Logo.png" width="180px"></img>
-		</a>
-		</div>
-		
-		<hr class="linea1">
-		
-		<div class="all">
-		<div class="bott3">
-			<a href="Regni.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">REGNI</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Storia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">STORIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Casate.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">CASATE</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Razze.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">RAZZE</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Magia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">MAGIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Bestiario.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">BESTIARIO</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Talassis.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">TALASSIS</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Erebo.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">EREBO</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Coelistia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">COELISTIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Religione.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">RELIGIONE</div>
-			</a>
-		</div></div>
-
-		
-		<p class="titolo"><b>Yàrànië | <font face="Annatar" ><font color="#79190e">h</font>~C7E5%`F</font></b></p>
-
-		<p class="cont">	
-			<font face="Helvetica" size="5">
-				<b>Contenuti:</b>
-			</font>
-			<ol class="cont">
-				<li><a href="#1">
-					<b><u>Geografia</u></b></a>
-				</li>
-				<li><a href="#2">
-					<b><u>Sottoregni</u></b></a>
-				</li>
-				<ol style="margin: 0px;">
-					<li><a href="#3">
-						<b><u>Mélamiaur</u></b></a>
-					</li>
-					<li><a href="#4">
-						<b><u>Taurmbel</u></b></a>
-					</li>
-					<li><a href="#5">
-						<b><u>Londiezel</u></b></a>
-					</li>
-					<li><a href="#6">
-						<b><u>Oronorsan</u></b></a>
-					</li>
-					<li><a href="#7">
-						<b><u>Amunlaur</u></b></a>
-					</li>
-					<li><a href="#8">
-						<b><u>Rhevaintarsta</u></b></a>
-					</li>
-					<li><a href="#9">
-						<b><u>Loxortumna</u></b></a>
-					</li>
-					<li><a href="#10">
-						<b><u>Hornoltasta</u></b></a>
-					</li>
-					<li><a href="#11">
-						<b><u>Erlatta</u></b></a>
-					</li>
-				</ol>
-			</ol>
-		</p>
-
-		<p class="art1">
-		<b>
-		Yàrànië, noto anche come l'Antico Regno, è una terra selvaggia e pericolosa situata nel mondo di Talagi.
-								Ogni sottoregno ha una storia unica e contribuisce in modo significativo alla composizione culturale e
-								politica del regno.
-		</b>
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="1" class="sott" style="margin-top: 420px; ;">Geografia</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			Un Intreccio di Paesaggi Diversi Yàrànië è caratterizzato da una 
-								geografia variegata che spazia da montagne imponenti a foreste dense, 
-								passando per coste frastagliate e paludi inospitali. Questa diversità 
-								di paesaggi ha dato origine a una varietà di microclimi che hanno influenzato 
-								profondamente lo sviluppo culturale e politico dei diversi sottoregni.
-			</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="2" class="sott">Sottoregni:</div>
-		<hr class="lineaSott">
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="3" class="sott1">Mèlamiaur | Antica Casa</div>
-			<p class="articolo">
-			Mèlamiaur, conosciuto come l'Antica Casa, è il sottoregno dominante situato al 
-								nord di Yàrànië. La sua posizione geografica lo vede incastonato tra montagne 
-								maestose e piccoli corsi d'acqua che hanno modellato il paesaggio creando basse 
-								valli. Al suo centro si erge Minassë, la Cittadella, una città-fortezza imponente 
-								che funge da capitale del regno. Minassë è situata nelle vicinanze delle montagne, 
-								a pochi chilometri dal mare, che pur rimanendo lontano, è visibile dal palazzo centrale
-								della città. La casata Minassaulë, responsabile della fondazione della Cittadella,
-								regna su Mèlamiaur e su tutto Yàrànië sotto la guida dell’Ingaran (Alto Re) Tormenion 
-								<a href="Minassion.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>Minassaulë</u></font></a>
-								. Egli è una figura leggendaria, non solo per essere il creatore della Cittadella, 
-								ma anche per i suoi titoli: Protettore degli Elfi, Flagello dell’Orda e l’unificatore degli 
-								otto sottoregni, titoli che testimoniano il suo potere e la sua influenza.<br>La geografia di Mèlamiaur,
-								con le sue valli e le montagne, crea un paesaggio di grande bellezza e importanza strategica,
-								contribuendo alla sua centralità nel regno.
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="4" class="sott1">Taurmbel | Possente Foresta</div>
-			<p class="articolo">
-			Taurmbel, o la Possente Foresta, è un sottoregno dominato da una fitta foresta di conifere, 
-								dove gli insediamenti elfici si mimetizzano perfettamente con la natura circostante. Questi 
-								villaggi sono spesso sopraelevati e costruiti in armonia con l’ambiente, rendendo difficile 
-								distinguerli nel verde della foresta. La casata Elensirpe* governa Taurmbel, con un sistema 
-								feudale che prevede la presenza di numerosi principi, con il più anziano che funge da Aran 
-								(Re). La casata Elensirpe è stata la prima ad allearsi con Tormenion Minassaulë durante i 
-								tempi oscuri che precedettero la distruzione del mondo di Talagi, stabilendo così un legame 
-								forte tra la Cittadella e la foresta.<br>Il clima fresco e umido di Taurmbel, caratterizzato 
-								da estati miti e inverni rigidi, ha permesso lo sviluppo di una flora rigogliosa e ha reso la 
-								foresta un luogo sicuro e nascosto per gli elfi.
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="5" class="sott1">Londiezel | Verdeporto</div>
-			<p class="articolo">
-			Londiezel, noto come Verdeporto, è il sottoregno che si affaccia sul mare ed è responsabile 
-								della flotta navale di Yàrànië e della protezione del commercio marittimo. Quasi tutta la 
-								popolazione di Londiezel vive lungo la costa, mentre l’entroterra boschivo è dedicato alla 
-								silvicoltura, praticata con grande rispetto per la Possente Foresta. La casata Ambolarin, 
-								composta da 
-								<a href="Razze.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>Quentuv</u></font></a>
-								giunti da Oriente, governa Londiezel. Questi nuovi governanti, sebbene 
-								non originari del regno, sono rispettati per le loro abilità nella navigazione e per la loro
-								generosità come amministratori. La casata Ambolarin prese il controllo del sottoregno attraverso 
-								un matrimonio politico, ripagando i debiti della precedente casata dopo la Grande Guerra, e garantendo 
-								così stabilità al regno.<br>Il clima marittimo di Londiezel, con inverni miti ed estati fresche, 
-								ha favorito una cultura marinara prospera e un'economia fiorente basata sul commercio e la pesca.
-			</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="6" class="sott1">Oronorsan | Montagne dei Giganti</div>
-			<p class="articolo">
-			Le Montagne dei Giganti di Oronorsan sono così chiamate non per la presenza di giganti, ma per i 
-								goliath che vi abitano. Queste montagne, prive di vegetazione, offrono un paesaggio arido e roccioso 
-								dove i 
-								<a href="Razze.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>goliath</u></font></a>
-								, una razza di enormi umanoidi, vivono di caccia e, occasionalmente, di allevamento. 
-								I goliath sono presenti nelle montagne sin dai tempi della colonizzazione elfica, mantenendo una 
-								relazione pacifica con gli elfi, nonostante qualche incidente durante le competizioni di lotta nelle 
-								Olimpiadi di Minassë. La casata Polner domina Oronorsan, garantendo un elevato grado di indipendenza 
-								rispetto agli altri sottoregni.<br>Il paesaggio di Oronorsan è caratterizzato da alte altitudini e 
-								condizioni rigide che limitano la vegetazione, creando un ambiente severo ma affascinante, perfetto 
-								per la cultura guerriera dei goliath.
-			</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="7" class="sott1">Amunlaur | Colline Minacciose</div>
-			<p class="articolo">
-			Amunlaur, o le Colline Minacciose, si trovano a oriente della Possente Foresta e sono note per essere state, 
-								in passato, infestate dagli 
-								<a href="Razze.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>yuan-ti</u></font></a>
-								, una razza di uomini serpente. Per oltre 1200 anni, queste colline furono 
-								teatro di conflitti fino a quando Minassyon IV della casata Minassaulë si ribellò a Tormenion e marciò contro 
-								gli yuan-ti. Tuttavia, il suo esercito fu sconfitto dalla guerriglia degli yuan-ti, finché la moglie di Tormenion, 
-								Colinrainë, non negoziò la pace con loro, firmando la "Pace di Sangue" (Yàraine). Da allora, gli yuan-ti sono 
-								diventati una parte integrale del regno, sebbene continuino a preferire l'isolamento e a mantenere un comportamento 
-								poco accogliente nei confronti delle altre razze.<br>Le colline di Amunlaur, con il loro passato violento e la 
-								presenza di comunità isolazioniste, rappresentano un'area di confine piena di tensioni politiche e culturali, 
-								che richiede un delicato equilibrio diplomatico.
-			</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="8" class="sott1">Rhevaintarsta | Terre del Re Selvaggio</div>
-			<p class="articolo">
-			Rhevaintarsta è una regione situata a sud di Londiezel, caratterizzata da boschi di conifere e da un fiume principale 
-								che scorre verso il mare, attorno al quale si trovano coltivazioni di grano e altri cereali. In passato, questa terra 
-								era abbandonata dopo la distruzione del mondo di Talagi, fino a quando Alaric Grandecorno decise di stabilirvisi, 
-								rinunciando alla vita nomade e alle razzie. Alaric sfidò Tormenion a duello per il possesso della terra, ma, dopo essere 
-								stato sconfitto dalle abilità magiche del re, accettò di sottomettersi a lui, prendendo il nome di Alaric Léranér 
-								(Uomo Libero). Da allora, gli uomini di Rhevaintarsta hanno mantenuto la loro fedeltà alla casata Minassaulë, pur temendo 
-								gli yuan-ti a est e preferendo la compagnia dei lucertoloidi a sud.<br>Il paesaggio di Rhevaintarsta, con le sue foreste 
-								e i fiumi, offre risorse naturali essenziali per la sopravvivenza della popolazione, che ha sviluppato una cultura agricola
-								profondamente radicata nelle tradizioni locali.
-			</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="9" class="sott1">Loxortumna | Paludi Profonde</div>
-			<p class="articolo">
-			Loxortumna è una regione paludosa situata nel sud di Yàrànië, abitata dai 
-								<a href="Razze.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>lucertoloidi</u></font></a>
-								, una razza di creature umanoidi simili 
-								a rettili. Queste paludi sono inospitali per la maggior parte delle altre razze, ma i lucertoloidi vi prosperano grazie alla 
-								loro adattabilità e alla loro connessione con l'ambiente. Nonostante siano visti come primitivi e poco intelligenti dagli altri 
-								popoli, i lucertoloidi hanno sviluppato una cultura ricca e complessa, basata sul rispetto per la natura e su una profonda conoscenza 
-								delle paludi in cui vivono. Governati da una gerarchia tribale, con i leader selezionati per saggezza e abilità piuttosto che 
-								per discendenza, i lucertoloidi di Loxortumna mantengono una relativa indipendenza, pur riconoscendo l'autorità dell'Ingaran 
-								Tormenion Minassaulë.<br> Le paludi di Loxortumna, con il loro clima umido e nebbioso, fungono da barriera naturale e da rifugio 
-								sicuro, rendendo difficile l'accesso a chi non ne conosce i segreti.
-			</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="10" class="sott1">Hornoltasta | Terre dell'orda civilizzata</div>
-			<p class="articolo">
-			Il sud di Yàrànië era brullo e infertile dominato da colline con poca vegetazione e priva di fiumi, facendo così da confine al 
-								regno. Ma 650 anni prima dell’anno corrente un'orda di 
-								<a href="Razze.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>Orchi e Mezzorchi</u></font></a>
-								arrivò da Sud, i lucertoloidi di Loxortumna furono i 
-								primi colpiti ma le paludi rallentarono gli invasori. Dopo le terre di Rhevaintarsta furono bruciate e razziate. Successivamente 
-								I villaggi nel sud di Londiezel furono colpiti. Intanto nella cittadella un consiglio fu chiamato che riunì gli altri Araniëhtanar, 
-								presenti furono un giovane Laurorn Elensirpe (attuale Aran di Taurmbel), Tormenion e la moglie Colinrainë. Così proprio a Minassë fu
-								assemblata un’armata composta da guerrieri Goliath, ricognitori yuan ti, cavalleria del Rhevaintarsta e arcieri elfi,  l’armata fu 
-								guidata dallo stesso Tormenion, che non era stato a capo di una da prima della distruzione di Talagi. Inizio cosi l’Hormasaitalë, 
-								gli orchi si stavano preparando ad appiccare fuoco alla Foresta possente per razziarne i villaggi quando arrivò l’armata di Tormenion 
-								col comandante in volo, essa fu messa in uno stretto passaggio dove sembrava in enorme inferiorità numerica, gli orchi si lanciarono 
-								quando un muro di fiamme bruciò la prima ondata, successivamente Tormenion evoco raffiche di fulmini su tutta l’orda, per dieci minuti 
-								gli orchi furono terrorizzati e bruciati dalle saette. Furono poi accerchiati dalla cavalleria nascosta nella foresta e finiti dalle 
-								esplosioni di fulmini, fuoco ed energia avvizzente. Poi l’arrivo di Tirminas XIV, Draga difensora della cittadella, sterminò gli orchi rimanenti, 
-								così ebbe fine l’Hormasaitalë, la civilizzazione dell’orda. Da quei giorni il rimasuglio dell’orda rimase fedele alla famiglia Minassaulë, 
-								ricordando la battaglia ancora ai giorni nostri. A capo si trova la casata Tirhorma (Guardiano dell’orda). 
-			</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="11" class="sott1">Erlatta | Cratere Solitario</div>
-			<p class="articolo">
-			Il cratere si trova tra la Foresta, le Montagne Minacciose, le Terre dell’orda 
-								e quelle del re selvaggio e funge da confine tra esse. Nel cratere sono esposte
-								vene di minerali preziosi contese tra i vari regni che a volte non ascoltano nemmeno 
-								le decisioni dell’autorità centrale. Così funge da stato cuscinetto ed è in mano all’
-								erede al trono, attualmente Minassyon V, figlio di Minassyon IV detto il ribelle.
-			</p>
+            <div class="side-contentBg"><div class="side-content">
+                <p>
+                    <b>Contenuti:</b>
+                    <ol class="cont" style="top: 46px;">
+                        <li><a href="#1"><b><u>Struttura di Governo</u></b></a></li>
+                        <li><a href="#2"><b><u>Terra di molte culture</u></b></a></li>
+                        <li><a href="#3"><b><u>Protettori del regno</u></b></a></li>
+                        <li><a href="#4"><b><u>Crisi alle porte</u></b></a></li>
+                        </ol>
+                    </ol>
+                </p>
+            </div></div>
 
 
-			
-		<div class="spazioCont"><center>Potrebbe interessarti:</center></div>
-		<div class="marquee"><p>
-		<table border="0" width="100%" class="cont">
-			<tr height="300px">
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Regni.html">
-					<img src="Img/Stemmi/RegniStemmi.png" width="200px">
-					</a>
-					</img></center>
-				</td>
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Tychera.html">
-					<img src="Img/Stemmi/Tychera.png" width="200px">
-					</a>
-					</img></center>
-				</td>
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Magia.html">
-					<img src="Img/Icone/Magia.png" width="200px">
-					</a>
-					</img></center>
-					</td>
-			</tr>
-			<tr>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Regni</center>
-					</font>
-				</td>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Regno di Tychera</center>
-					</font>
-				</td>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Magia</center>
-					</font>
-				</td>
-			</tr>
-			</table>
-		</p></div>
+            <p class="title">Yáranie |<font class="TAnnatar"> hÍ~C7E5%`F</font></p>    
+            <div class="main-contentBg"><div class="main-content"><div>
 
-		<img class="stan" src="Img/Stemmi/Minassion.png" style="top: 20px;"></img>
-		<p class="desc" style="top: 550px;">Stemma di Yáranië</p>
-		
-		<img class="stan" src="Img/Razze/Elfo2.jpg" style="top: 1000px; width: 260px;"></img>
-		<p class="desc" style="top: 1500px;">Esempio di Elfo</p>
+            <!-- Paragrafo -->
 
-		<img class="stan" src="Img/Razze/Quentuv.jpg" style="top: 2300; width: 260px;"></img>
-		<p class="desc" style="top: 2680px;">Esempio di Quentuv</p>
+                <p class="argument" style="top: 10px;"><b>
+                    Oltre le nebbie del tempo, dove le montagne si ergono come sentinelle silenziose e antiche
+                    foreste sussurrano segreti millenari, sorge l'Alto Regno di Yáranië. In questo magnifico
+                    reame, torri di marmo bianco si stagliano contro cieli cangianti, mentre elfi dalla longevità
+                    straordinaria camminano su strade lastricate da migliaia di anni di storia e tradizione.
+                </b></p>
+            
+            <!-- Paragrafo -->
 
-	</body>
+                <p class="subtitle1" id="1">
+                Struttura di Governo
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Il cuore pulsante di questo regno è l'Ingaran <a href="Tormenion.html" class="link">Tormenion Minassaule</a>, un sovrano il cui potere
+                    si irradia come raggi solari attraverso le province chiamate <a href="Y-Amministrazione.html" class="link">Aranier</a>. Ogni Aranie è governato
+                    da un Aran, sovrano il cui titolo regale nasconde una realtà di sottile diplomazia e fedeltà
+                    giurata. Questi re-vassalli sono più dei governatori dipendenti dal potere centrale che veri e 
+                    propri vassalli.<br>
+                    L'<a href="Y-Gov.html" class="link">Antico Consiglio</a>, con i suoi 288 membri, è un mosaico di saggezza accumulata attraverso
+                    secoli di vita e esperienza. Immaginate sale di marmo dove 144 "giovani" – che hanno
+                    vissuto meno di duecento anni – discutono con fervore accanto a 144 "anziani", le cui
+                    memorie risalgono a epoche dimenticate dagli umani. Le loro voci riverberano nella Città
+                    Alta di Minasse, traducendo i 144 Princìpi in decisioni che plasmeranno il futuro di
+                    generazioni.
+                    
+                </p>
+            
+            <!-- Paragrafo -->
 
+                <p class="subtitle1" id="2">
+                Terra di molte culture
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Dalle nebbiose cime di <a href="Y-Amministrazione.html" class="link">Oronorsan</a>, dove Mezzigiganti errano tra picchi innevati, alle oscure
+                    paludi di <a href="Y-Amministrazione.html" class="link">Loxortumna</a>, dimora dei misteriosi lucertoloidi dalla pelle squamosa, Yáranië è un
+                    caleidoscopio di culture e razze. I <a href="Tareldar.html" class="link">Tareldar</a>, elfi dalla pelle diafana e occhi dai colori
+                    impossibili – blu, giallo e viola, mai il comune marrone degli umani – dominano con la loro
+                    presenza eterea, vivendo fino a mille anni in corpi che invecchiano con la lentezza delle
+                    montagne.<br>
+                    Nella fitta Foresta di <a href="Y-Gov.html#2.2" class="link">Taurmbel</a>, villaggi elfici si nascondono tra rami millenari, mentre le
+                    pianure dorate di <a href="Y-Amministrazione.html" class="link">Rhevainór</a> ospitano discendenti di fieri guerrieri umani che un tempo
+                    sfidarono l'Ingaran stesso. Sul mare, le vele delle navi di <a href="Y-Amministrazione.html" class="link">Verdeporto</a> catturano venti che
+                    hanno attraversato oceani inesplorati, guidate dai navigatori della stirpe Ambolarin.
+                </p>
+            
+            <!-- Paragrafo -->
+
+
+                <p class="subtitle1" id="3">
+                    Protettori del regno
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Gli 8.000 membri della <a href="Arantiris.html" class="link">Guardia Reale</a>, gli Arantir, rappresentano il culmine dell'arte militare
+                    elfica. Immaginate diecimila anni di tradizione bellica distillati in guerrieri che hanno
+                    dedicato secoli al perfezionamento della spada e dell'arco. Cavalieri in armature di Angalas
+                    cavalcano possenti cervi da guerra, mentre arcieri dalla mira leggendaria incoccano frecce
+                    capaci di trovare il cuore di un nemico a distanze impossibili.<br>
+                    Quando la dama Tàrivel Elensirpe, comandante della cavalleria pesante, guida i suoi
+                    reggimenti in parata, il sole scintilla su elmi decorati con motivi naturali in oro, creando un
+                    mare di luce che avvolge i guerrieri come un'aura divina. Accanto a lei, il calcolatore Hùrìn,
+                    eroe della battaglia dell'<a href="Y-Amministrazione.html" class="link">Hormasaitalë</a>, dirige i suoi arcieri con la freddezza e la precisione
+                    che hanno salvato il regno dall'invasione orchesca.
+                    
+                </p>
+            <!-- Paragrafo -->
+
+                <p class="subtitle1" id="4">
+                Crisi alle porte
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Ora, mentre il Principe Cavaliere esala respiri sempre più deboli, Yáranië si trova su un
+                    precipizio. Le fazioni progressiste e conservatrici si scrutano attraverso i saloni di marmo
+                    dell'Antico Consiglio. I venti del cambiamento voluti da <a href="MinassyonV.html" class="link">Minassyon V</a> soffiano contro le radici della tradizione
+                    millenaria mantenuta da <a href="Tirsive.html" class="link">Tírsive</a>. L'Ingaran Tormenion osserva, pesa, valuta – mentre sua figlia e il figlio del suo
+                    erede si preparano per una successione che potrebbe trasformarsi in conflitto.
+                    Sarà la saggezza accumulata in migliaia di anni a prevalere, o Yáranië vedrà infine il sangue
+                    elfico versato su marmi antichi? Solo il tempo, di cui gli elfi hanno sempre avuto
+                    abbondanza, potrà dirlo.<br>
+                    Nel frattempo, le stelle ruotano sopra la cittadella di <a href="Minasse.html" class="link">Minasse</a>, testimoni silenziose di un
+                    reame dove passato e futuro si intrecciano come i rami della Possente Foresta, in un
+                    equilibrio tanto magnifico quanto fragile.
+                </p>
+
+                <p class="recommended">Potrebbe interessarti:</p>                
+                <div class="recommend">
+                    <a href="Y-Amministrazione.html">   
+                    <div class="recommend-wrap">
+                        <img src="Img/Map/YaranieMap.jpeg">
+                        <p>Amministrazione Territoriale</p>
+                    </div></a>
+                    <a href="Y-Gov.html">   
+                    <div class="recommend-wrap">
+                        <img src="Img/Banners/Minassaule.png">
+                        <p>Sistema Governativo</p>
+                    </div></a>
+                    <a href="Arantiris.html">   
+                    <div class="recommend-wrap">
+                        <img src="Img/Banners/Minassaule.png">
+                        <p>Arantiris</p>
+                    </div></a>
+                    <a href="Y-Situazione.html">   
+                    <div class="recommend-wrap">
+                        <img src="Img/Banners/Minassaule.png">
+                        <p>Situazione Politica</p>
+                    </div></a>
+                    <a href="Tareldar.html">   
+                    <div class="recommend-wrap">
+                        <img src="Img/People/Races/Tareldar1.png">
+                        <p>Tareldar</p>
+                    </div></a>  
+                </div>
+            </div></div><div>
+            
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="checkbox" id="darkModeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div> 
+            </div>
+            
+            <script src="Scripts/Autocomplete.js"></script>
+            <script src="Scripts/Darkmode.js"></script>
+            <script src="Scripts/ImageScroll.js" data-scroll-thresholds="0"></script>
+            <script src="Scripts/CookieAlert.js"></script>
+        </div>
+    </body>
 </html>

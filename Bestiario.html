@@ -1,174 +1,62 @@
-﻿<html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bestiario | TalagiWiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Img/Icons/Logo.png">
+		<link rel="stylesheet" type="text/css" href="Main.css"></link>
+        <link rel="stylesheet" type="text/css" href="DarkModeButton.css"></link>
+    </head>
+    <body>  
+        <div class="wrapper">
+            <img class="bg" src="Img/bg.png"></img>
+            <div class="undertop"></div>
+            <a href="index.html"><img class="logo" src="Img/Icons/Logo.png"></img></a>
 
-	<!--
+            <div class="alert-boxBgBg" id="alertBox"><div class="alert-boxBg">
+                <div class="alert-box">
+                    <p>Accetta i nostri Cookies per accedere alla wiki, essi saranno utilizzati 
+                        al solo scopo statistico dal team di sviluppo per migliorare il sito. Clicca <a href="Cookie.php" class="link" style="color: var(--standard-bgcolor);">qui</a>
+                         per visualizzare i dati del server.
+                    </p>
+                    <button id="confirmButton">
+                        Accetta
+                    </button>
+                </div>
+            </div></div>
 
-	Colori: 
+            <p class="top"><a href="index.html" class="top">&nbspHOME&nbsp</a></p>
+            <p class="top"><a href="Mappe.html" class="top">&nbspMAPPE&nbsp</a></p>
+            <p class="top"><a href="Arts.html" class="top">&nbspARTS&nbsp</a></p>
 
-	Beige: 	#f2e1da
-	Rosso: 	#79190e
-	Blu:	#103956
-	Verde: 	#3f5736
+            <div class="search-box">
+                <div class="row">
+                    <input class="search-bar" type="text" id="input-box" placeholder="Cerca" autocomplete="off">
+                </div>
+                <div class="result-box">
+                   
+                </div>
+                <img class="search-lense" src="Img/Icons/Search.svg"></img>
+            </div>
 
-	-->
+            <a href="login.html"><img class="login" src="Img/Icons/Profile.png"><img></a>
 
-	<head>
+            <div class="flex-wrap">
+                <div class="item-bg"><a href="Spiriti.html"><img src="Img/People/Monsters/Demone1.jpg"></a><p>Spiriti e Demoni</p></div>
+                <div class="item-bg"><a href="MGolem.html"><img src="Img/People/Monsters/MGolem.jpg"></a><p>Mossbound Golem</p></div>
+            </div>
 
-		<title>Bestiario | TalagiWiki</title>
-		<link rel="icon" type="image/x-icon" href="Img/Logo.png">
-		<link rel="stylesheet" type="text/css" href="Stile1.css"></link>
-	
-	</head>
-
-	<body>
-		<div class="bottLogo">
-		<a href="Homepage.html" class="logo1">
-			<img src="Img/Logo.png" width="180px"></img>
-		</a>
-		</div>
-		
-		<hr class="linea1">
-		
-		<div class="all">
-		<div class="bott3">
-			<a href="Regni.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">REGNI</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Storia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">STORIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Casate.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">CASATE</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Razze.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">RAZZE</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Magia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">MAGIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Bestiario.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">BESTIARIO</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Talassis.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">TALASSIS</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Erebo.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">EREBO</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Coelistia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">COELISTIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Religione.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">RELIGIONE</div>
-			</a>
-		</div></div>
-		
-		<p class="titolo"><b>Bestiario</b></p>
-
-		<p class="cont">	
-			<font face="Helvetica" size="5">
-				<b>Contenuti:</b>
-			</font>
-		
-		<p class="art1">
-		<b>
-		Nel mondo di Talagi, la natura possiede folora e fauna molto varia. Da piccole prede
-								a grandi predatori, da piccoli mimic a enormi aberrazzioni, da creature celestiali a mostri 
-								demoniaci. Si potrebbe dire che nel mondo di Talagi non si è mai al sicuro
-		</b>
-		</p>
-
-		<div id="1" class="sott" style="margin-top: 220px;"></div>
-		<hr class="lineaSott">
-
-		<a href="MGolem.html">
-		<img class="lat"src="Img/MGolem.jpg" style="top: 260px;  width: 260px;"></img>
-		</a>
-
-		<p class="lat" style="margin-top: 290px;">
-		Mossbound Golem
-		</p>
-		
-		<a href="Spiriti.html">
-		<img class="lat"src="Img/Razze/Demone1.jpg" style="top: 620px;  width: 260px;"></img>
-		</a>
-
-		<p class="lat" style="margin-top: 600px;">
-		Demoni e Spiriti
-		</p>
-
-		<div class="spazioCont" style="top: 770px;"><center>Potrebbe interessarti:</center></div>
-		<div class="marquee" style="top: 770px;"><p>
-		<table border="0" width="100%" class="cont">
-			<tr height="300px">
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Regni.html">
-					<img src="Img/Stemmi/RegniStemmi.png" width="200px">
-					</a>
-					</img></center>
-				</td>
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Yaranie.html">
-					<img src="Img/Stemmi/Minassion.png" width="200px">
-					</a>
-					</img></center>
-				</td>
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Magia.html">
-					<img src="Img/Icone/Magia.png" width="200px">
-					</a>
-					</img></center>
-					</td>
-			</tr>
-			<tr>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Regni</center>
-					</font>
-				</td>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Regno di Yáranië</center>
-					</font>
-				</td>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Magia</center>
-					</font>
-				</td>
-			</tr>
-			</table>
-		</p></div>
-	</body>
-
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="checkbox" id="darkModeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div> 
+            </div>
+            <script src="Scripts/Autocomplete.js"></script>
+            <script src="Scripts/Darkmode.js"></script>
+            <script src="Scripts/CookieAlert.js"></script>
+        </div>
+    </body>
 </html>

@@ -1,149 +1,90 @@
-﻿<html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Moera | Regni | TalagiWiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Img/Icons/Logo.png">
+		<link rel="stylesheet" type="text/css" href="Main.css"></link>
+        <link rel="stylesheet" type="text/css" href="DarkModeButton.css"></link>
+    </head>
+    <body>  
+        <div class="wrapper">
+            <img class="bg" src="Img/bg.png"></img>
+            <div class="undertop"></div>
+            <a href="index.html"><img class="logo" src="Img/Icons/Logo.png"></img></a>
+            
+            <div class="alert-boxBgBg" id="alertBox"><div class="alert-boxBg">
+                <div class="alert-box">
+                    <p>Accetta i nostri Cookies per accedere alla wiki, essi saranno utilizzati 
+                        al solo scopo statistico dal team di sviluppo per migliorare il sito. Clicca <a href="Cookie.php" class="link" style="color: var(--standard-bgcolor);">qui</a>
+                         per visualizzare i dati del server.
+                    </p>
+                    <button id="confirmButton">
+                        Accetta
+                    </button>
+                </div>
+            </div></div>    
 
-	<!--
+            <p class="top"><a href="index.html" class="top">&nbspHOME&nbsp</a></p>
+            <p class="top"><a href="Mappe.html" class="top">&nbspMAPPE&nbsp</a></p>
+            <p class="top"><a href="Arts.html" class="top">&nbspARTS&nbsp</a></p>
 
-	Colori: 
+            <div class="search-box">
+                <div class="row">
+                    <input class="search-bar" type="text" id="input-box" placeholder="Cerca" autocomplete="off">
+                </div>
+                <div class="result-box">
+                   
+                </div>
+                <img class="search-lense" src="Img/Icons/Search.svg"></img>
+            </div>
 
-	Beige: 	#f2e1da
-	Rosso: 	#79190e
-	Blu:	#103956
-	Verde: 	#3f5736
+            <a href="login.html"><img class="login" src="Img/Icons/Profile.png"><img></a>
 
-	-->
+            <div class="side-contentBgImg"><img src="Img/Banners/Moera.png"><p>Stemma di Moera</p></div>
+            <div class="side-contentBgImg" style="display: none;"><img src="Img/People/Races/Nano.jpg"><p>Esempio di Nano</p></div>
+            <div class="side-contentBgImg" style="display: none;"><img src="Img/People/Races/Quentuv.jpg"><p>Esempio di Quentuv</p></div>
+            <div class="side-contentBgImg" style="display: none;"><img src="Img/People/Races/Tiefling.jpg"><p>Esempio di Mezzodiavolo</p></div>
 
-	<head>
+            <div class="side-contentBg"><div class="side-content">
+                <p>
+                    <b>Contenuti:</b>
+                    <ol class="cont" style="top: 46px;">
+                        <li><a href="#1"><b><u>Struttura di Governo</u></b></a></li>
+                        <li><a href="#2"><b><u>Storia e Cultura</u></b></a></li>
+                        <li><a href="#3"><b><u>Una Tradizione Militarizzata</u></b></a></li>
+                        <li><a href="#4"><b><u>Crisi e Rinascita</u></b></a></li>
+                        <li><a href="#5"><b><u>Titoli Nobiliari e Gerarchia Sociale</u></b></a></li>
+                        </ol>
+                    </ol>
+                </p>
+            </div></div>
 
-		<title>Moera | TalagiWiki</title>
-		<link rel="icon" type="image/x-icon" href="Img/Logo.png">
-		<link rel="stylesheet" type="text/css" href="Stile1.css"></link>
-	
-	</head>
 
-	<body>
-		<div class="bottLogo">
-		<a href="Homepage.html" class="logo1">
-			<img src="Img/Logo.png" width="180px"></img>
-		</a>
-		</div>
-		
-		<hr class="linea1">
-		
-		<div class="all">
-		<div class="bott3">
-			<a href="Regni.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">REGNI</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Storia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">STORIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Casate.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">CASATE</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Razze.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">RAZZE</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Magia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">MAGIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Bestiario.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">BESTIARIO</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Talassis.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">TALASSIS</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Erebo.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">EREBO</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Coelistia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">COELISTIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Religione.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">RELIGIONE</div>
-			</a>
-		</div></div>
+            <p class="title">Regno di Moera</p>    
+            <div class="main-contentBg"><div class="main-content"><div>
 
-		
-		<p class="titolo"><b>Regno di Moera</b></p>
+            <!-- Paragrafo -->
 
-		<p class="cont">	
-			<font face="Helvetica" size="5">
-				<b>Contenuti:</b>
-			</font>
-			<ol class="cont">
-				<li><a href="#2">
-					<b><u>Struttura di Governo</u></b></a>
-				</li>
-				<li><a href="#3">
-					<b><u>Storia e Cultura</u></b></a>
-				</li>
-				<ol style="margin: 0px;">
-					<li><a href="#4">
-						<b><u>Una Tradizione <br>Militarizzata</u></b></a>
-					</li>
-					<li><a href="#5">
-						<b><u>Crisi e Rinascita</u></b></a>
-					</li>
-				</ol>
-				<li><a href="#6">
-					<b><u>Titoli Nobiliari e <br> Gerarchia Sociale</u></b></a>
-				</li>
-			</ol>
-		</p>
-
-		<p class="art1">
-		<b>
-		Il Regno di Moera, fondato circa 1700 anni fa, è una delle entità politiche più antiche 
+                <p class="argument" style="top: 10px;"><b>
+                    Il Regno di Moera, fondato circa 1700 anni fa, è una delle entità politiche più antiche 
 								di Talagi. Nasce dall’unione di tre gruppi distinti: i 
-								<a href="Razze.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>Tiefling</u></font></a>
-								, conosciuti per il loro spirito 
-								ambizioso e l’attitudine al commercio; i 
-								<a href="Razze.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>Quentuv</u></font></a>
-								, maestri di intrighi e 
-								magia erebica; e i 
-								<a href="Razze.html">
-								<font face="Helvetica" size="4" color="#3f5736"><u>Nani della Montagna</u></font></a>
-								, custodi di un sapere antico e maestri dell’ingegneria. 
+								<a href="Mezzidiavoli.html" class="link">Mezzidiavoli</a>, conosciuti per il loro spirito 
+								ambizioso e l’attitudine al commercio; i <a href="Quentuv.html" class="link">Quentuv</a>, maestri di intrighi e 
+								magia erebica; e i <a href="Nani.html" class="link">Nani della Montagna</a>, custodi di un sapere antico e maestri dell’ingegneria. 
 								Questa coalizione, siglata con il Patto della Pietra e della Tenebra, diede origine a una monarchia 
 								costituzionale unica, dove il potere è condiviso da tre figure di pari dignità.
-		</b>
-		</p>
+                </b></p>
+            
+            <!-- Paragrafo -->
 
-		<!--  SOTTOTITOLO  -->
-
-		<div id="2" class="sott" style="margin-top: 360px;">Struttura di Governo</div>
-		<hr class="lineaSott">
-			<p class="articolo" style="margin-bottom: 0px;">
-			Il governo di Moera è retto da un Consiglio Trino, composto da tre governanti:
+                <p class="subtitle1" id="1">
+                Struttura di Governo
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Il governo di Moera è retto da un Consiglio Trino, composto da tre governanti:
 								<ul>
 									<li>
 										L’Arcanere: rappresentante dei Quentuv, maestro delle arti erebiche e protettore del sapere occulto.	
@@ -158,120 +99,115 @@
 									</li>
 								</ul>
 			</p>
-			<p class="articolo" style="margin: 0px;">
+			<p class="argument" style="top: 30px;">
 			Ogni membro del consiglio ha il proprio dominio d’influenza, ma le decisioni più importanti richiedono una votazione unanime.<br><br><br>
 			</p>
+                </p>
+            
+            <!-- Paragrafo -->
 
-		<!--  SOTTOTITOLO  -->
-
-		<div id="3" class="sott">Storia e Cultura</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			All’apparenza, le architetture di Moera riflettono una semplicità pragmatica, con mura robuste e strutture geometriche. 
-								Tuttavia, avvicinandosi al cuore delle città, emerge una raffinatezza nascosta: cupole che sfumano dal verde acqua al dorato
-								, intricati bassorilievi che narrano la storia del Patto fondatore e ponti di pietra intarsiati con gemme minerarie estratte 
-								dalle montagne circostanti.<br>La capitale, Khor-Tulvar, sorge presso un cratere naturale circondato da maestose montagne. Un 
-								tempo semplice avamposto, oggi è il simbolo dell’ingegno nanico, adornato da enormi cupole e torri che ospitano i laboratori 
-								dei Forgiatori e i consigli dell’aristocrazia.	
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="4" class="sott1">Una Tradizione Militarizzata</div>
-			<p class="articolo">
-			Negli ultimi 50 anni, Moera ha investito pesantemente nella militarizzazione. 
-								Le scoperte recenti nel campo della fusione tra magia e tecnologia hanno prodotto armi innovative e 
-								strumenti come i primi treni a vapore e legioni di Golem da guerra. I Nani, in particolare, sono stati i 
-								promotori di questi progressi, vedendo nelle nuove tecnologie la chiave per difendere il regno e affermare 
-								la propria supremazia.
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="5" class="sott1">Crisi e Rinascita</div>
-			<p class="articolo" style="margin-bottom: 0px;">
-			Nel 2023, Moera affrontò uno dei momenti più difficili della sua storia. Un piccolo ma aggressivo impero del 
-								sud, noto come l’Impero di Ashar, lanciò un’invasione per ottenere il controllo delle risorse e della posizione 
-								strategica di Moera. Nonostante la resistenza iniziale, le forze di Moera furono sopraffatte. Le coste vennero razziate e, 
-								dopo una serie di battaglie sanguinose, anche la capitale Khor-Tulvar cadde.<br>Per quattro anni, dal 2023 al 2027, Moera 
-								cessò di esistere come entità autonoma, trasformandosi nel Protettorato di Moera sotto il dominio di Ashar. La situazione cambiò nel 
-								2027, grazie all’intervento di due regni vicini:
-								<ul>
-									<li>
-										Godvuur, la grande potenza del continente, che inviò truppe e risorse per liberare Moera.	
-									</li>
-									<br>
-									<li>										
-										<a href="Tychera.html">
-										<font face="Helvetica" size="4" color="#3f5736"><u>Tychera</u></font></a>
-										, una città-stato costiera famosa per la sua flotta navale e le sue cavallerie pesanti, che sconfisse Ashar sui mari.
-									</li>
-								</ul>
-			</p>
-			<p class="articolo" style="margin: 0px;">
-								La guerra si concluse nel 2029, con la totale espulsione delle forze di Ashar dal continente e la riconquista di Moera. Da allora, il regno ha giurato di non essere mai più colto impreparato.<br><br><br>
-			</p>
+                <p class="subtitle1" id="2">
+                Storia e Cultura
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    All’apparenza, le architetture di Moera riflettono una semplicità pragmatica, con mura robuste e strutture geometriche. 
+                    Tuttavia, avvicinandosi al cuore delle città, emerge una raffinatezza nascosta: cupole che sfumano dal verde acqua al dorato
+                    , intricati bassorilievi che narrano la storia del Patto fondatore e ponti di pietra intarsiati con gemme minerarie estratte 
+                    dalle montagne circostanti.<br>La capitale, Khor-Tulvar, sorge presso un cratere naturale circondato da maestose montagne. Un 
+                    tempo semplice avamposto, oggi è il simbolo dell’ingegno nanico, adornato da enormi cupole e torri che ospitano i laboratori 
+                    dei Forgiatori e i consigli dell’aristocrazia.
+                </p>
 
 
+                <p class="subtitle1" id="3">
+                Una Tradizione Militarizzata
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Negli ultimi 50 anni, Moera ha investito pesantemente nella militarizzazione. Le scoperte nella
+                    fusione tra magia e tecnologia hanno portato alla creazione di:
+                    <ul>
+                        <li>Armi innovative.</li>
+                        <li>Primi treni a vapore.</li>
+                        <li>di Golem da guerra.</li> 
+                    </ul>
+                </p><p class="argument" style="top: 30px;">
+                    I Nani sono stati i principali promotori di questi progressi, vedendo nelle nuove tecnologie la
+                    chiave per la difesa del regno.    
+                </p>
 
-			
-		<div class="spazioCont"><center>Potrebbe interessarti:</center></div>
-		<div class="marquee"><p>
-		<table border="0" width="100%" class="cont">
-			<tr height="300px">
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Regni.html">
-					<img src="Img/Stemmi/RegniStemmi.png" width="200px">
-					</a>
-					</img></center>
-				</td>
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Tychera.html">
-					<img src="Img/Stemmi/Tychera.png" width="200px">
-					</a>
-					</img></center>
-				</td>
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Magia.html">
-					<img src="Img/Icone/Magia.png" width="200px">
-					</a>
-					</img></center>
-					</td>
-			</tr>
-			<tr>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Regni</center>
-					</font>
-				</td>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Regno di Tychera</center>
-					</font>
-				</td>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Magia</center>
-					</font>
-				</td>
-			</tr>
-			</table>
-		</p></div>
+                <p class="subtitle1" id="4">
+                Crisi e Rinascita
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Nel 2023, Moera fu invasa dall'Impero di Ashar, un piccolo ma aggressivo impero del sud che
+                    mirava alle sue risorse strategiche. Dopo una serie di battaglie sanguinose, anche la capitale
+                    Khor-Tulvar cadde, e il regno divenne il Protettorato di Moera sotto il dominio di Ashar.
+                    Nel 2027, due regni vicini intervennero per liberare Moera:
+                    <ul>
+                        <li>
+                            <a href="Godvuur.html" class="link">Godvuur</a> la grande potenza del continente, che inviò truppe e risorse per liberare Moera.	
+                        </li>
+                        <br>
+                        <li>										
+                            La <a href="Tychera.html" class="link">Repubblica di Tychera</a>, una città-stato costiera famosa 
+                            per la sua flotta navale e le sue cavallerie pesanti, che sconfisse Ashar sui mari.
+                        </li>
+                    </ul>
+                </p>
+                <p class="argument" style="top: 30px;">
+                    La guerra terminò nel 2029 con la totale espulsione di Ashar e la riconquista del regno. Da
+                    allora, Moera ha giurato di non essere mai più colto impreparato.    
+                </p>
+            
+            
+            <!-- Paragrafo -->
 
-		<img class="stan" src="Img/Stemmi/Moera.png" style="top: 20px;"></img>
-		<p class="desc" style="top: 550px;">Stemma di Moera</p>
+                <p class="subtitle1" id="5">
+                Titoli Nobiliari e Gerarchia Sociale
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Oltre al Consiglio Trino, il regno presenta una complessa struttura nobiliare. Tra i titoli principali troviamo:
+                    <ul>
+                        <li>Custodi del Cratere: antichi clan nani che controllano l’accesso alle risorse minerarie.</li><br>
+                        <li>Araldi delle Tenebre: famiglie Quentuv che amministrano le regioni sotterranee.</li><br>
+                        <li>Signori del Patto: casate Tiefling che gestiscono il commercio e le relazioni con gli altri regni.</li>
+                    </ul>
+                <p class="argument" style="top: 30px;">
+                    Questi titoli rappresentano non solo il potere politico, ma anche il profondo intreccio culturale che definisce l’identità di Moera.
+                </p>
+                   
 
-		<img class="stan" src="Img/Razze/Nano.jpg" style="top: 620px;width: 220px;"></img>
-		<p class="desc" style="top: 1030px;">Esempio di Nano</p>
-
-		<img class="stan" src="Img/Razze/Quentuv.jpg" style="top: 1100px; width: 260px;"></img>
-		<p class="desc" style="top: 1470px;">Esempio di Quentuv</p>
-
-
-
-	</body>
-
+                <p class="recommended">Potrebbe interessarti:</p>                
+                <div class="recommend">
+                    <a href="Tychera.html">   
+                    <div class="recommend-wrap">
+                        <img src="Img/Banners/Tychera.png">
+                        <p>Repubblica di Tychera</p>
+                    </div></a>
+                    <a href="Casate.html">   
+                    <div class="recommend-wrap">
+                        <img src="Img/Banners/CasateStemmi.png">
+                        <p>Casate</p>
+                    </div></a>  
+                </div>
+            </div></div><div>
+            
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="checkbox" id="darkModeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div> 
+            </div>
+            
+            <script src="Scripts/Autocomplete.js"></script>
+            <script src="Scripts/Darkmode.js"></script>
+            <script src="Scripts/ImageScroll.js" data-scroll-thresholds="0,10,30,56"></script>
+            <script src="Scripts/CookieAlert.js"></script>
+        </div>
+    </body>
 </html>

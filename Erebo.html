@@ -1,345 +1,213 @@
-﻿<html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Erebo | TalagiWiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Img/Icons/Logo.png">
+		<link rel="stylesheet" type="text/css" href="Main.css"></link>
+        <link rel="stylesheet" type="text/css" href="DarkModeButton.css"></link>
+    </head>
+    <body>  
+        <div class="wrapper">
+            <img class="bg" src="Img/bg.png"></img>
+            <div class="undertop"></div>
+            <a href="index.html"><img class="logo" src="Img/Icons/Logo.png"></img></a>
+            <div class="alert-boxBgBg" id="alertBox"><div class="alert-boxBg">
+                <div class="alert-box">
+                    <p>Accetta i nostri Cookies per accedere alla wiki, essi saranno utilizzati 
+                        al solo scopo statistico dal team di sviluppo per migliorare il sito. Clicca <a href="Cookie.php" class="link" style="color: var(--standard-bgcolor);">qui</a>
+                         per visualizzare i dati del server.
+                    </p>
+                    <button id="confirmButton">
+                        Accetta
+                    </button>
+                </div>
+            </div></div>
+            <p class="top"><a href="index.html" class="top">&nbspHOME&nbsp</a></p>
+            <p class="top"><a href="Mappe.html" class="top">&nbspMAPPE&nbsp</a></p>
+            <p class="top"><a href="Arts.html" class="top">&nbspARTS&nbsp</a></p>
 
-	<!--
+            <div class="search-box">
+                <div class="row">
+                    <input class="search-bar" type="text" id="input-box" placeholder="Cerca" autocomplete="off">
+                </div>
+                <div class="result-box">
+                   
+                </div>
+                <img class="search-lense" src="Img/Icons/Search.svg"></img>
+            </div>
 
-	Colori: 
+            <a href="login.html"><img class="login" src="Img/Icons/Profile.png"><img></a>
 
-	Beige: 	#f2e1da
-	Rosso: 	#79190e
-	Blu:	#103956
-	Verde: 	#3f5736
+            <div class="side-contentBgImg"><img src="Img/Icons/Erebo.jpg"><p>Caverna nell'Erebo</p></div>
 
-	-->
-
-	<head>
-
-		<title>Erebo | TalagiWiki</title>
-		<link rel="icon" type="image/x-icon" href="Img/Logo.png">
-		<link rel="stylesheet" type="text/css" href="Stile1.css"></link>
-	
-	</head>
-
-	<body>
-		<div class="bottLogo">
-		<a href="Homepage.html" class="logo1">
-			<img src="Img/Logo.png" width="180px"></img>
-		</a>
-		</div>
-		
-		<hr class="linea1">
-		
-		<div class="all">
-		<div class="bott3">
-			<a href="Regni.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">REGNI</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Storia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">STORIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Casate.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">CASATE</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Razze.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">RAZZE</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Magia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">MAGIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Bestiario.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">BESTIARIO</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Talassis.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">TALASSIS</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Erebo.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">EREBO</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Coelistia.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">COELISTIA</div>
-			</a>
-		</div>
-		<div class="bott3">
-			<a href="Religione.html">
-				<img src="Img/Bott/Bott3.png" alt="Bott3">
-				<div class="testo1">RELIGIONE</div>
-			</a>
-		</div></div>
-
-		
-		<p class="titolo"><b>Erebo</b></p>
-
-		<p class="cont">	
-			<font face="Helvetica" size="5">
-				<b>Contenuti:</b>
-			</font>
-			<ol class="cont">
-				<li><a href="#1">
-					<b><u>Geografia</u></b></a>
-				</li>
-				<li><a href="#2">
-					<b><u>Città Perdute e <br>Antri Cristallini</u></b></a>
-				</li>
-				<li><a href="#3">
-					<b><u>I Labirinti dei Grovliyr</u></b></a>
-				</li>
-				<li><a href="#4">
-					<b><u>I Mari Sottosopra</u></b></a>
-				</li>
-				<li><a href="#5">
-					<b><u>La Fauna dell’Erebo</u></b></a>
-				</li>
-				<li><a href="#6">
-					<b><u>Creature Magiche</u></b></a>
-				</li>
-				<li><a href="#7">
-					<b><u>Piante Rare e Letali</u></b></a>
-				</li>
-				<li><a href="#8">
-					<b><u>Magia dell’Erebo</u></b></a>
-				</li>
-				<li><a href="#9">
-					<b><u>Storia Antica dell’Erebo</u></b></a>
-				</li>
-			</ol>
-		</p>
+            <div class="side-contentBg"><div class="side-content">
+                <p>
+                    <b>Contenuti:</b>
+                    <ol class="cont" style="top: 46px;">
+                        <li><a href="#1"><b><u>Geografia dell'Erebo</u></b></a></li>
+                        <ol>
+                            <li><a href="#1.1"><b><u>Città Perdute e Antri Cristallini</u></b></a></li>
+                            <li><a href="#1.2"><b><u>Labirinti dei Grovliyr</u></b></a></li>
+                            <li><a href="#1.3"><b><u>Mari Sottosopra</u></b></a></li>
+                        </ol>
+                        <li><a href="#2"><b><u>Fauna dell'Erebo</u></b></a></li>
+                        <ol>
+                            <li><a href="#2.1"><b><u>Bestie Soprannaturali</u></b></a></li>
+                            <li><a href="#2.2"><b><u>Creature Magiche</u></b></a></li>
+                        </ol>
+                        <li><a href="#3"><b><u>Vegetazione Magica</u></b></a></li>
+                        <li><a href="#4"><b><u>Magia dell'Erebo</u></b></a></li>
+                        <li><a href="#5"><b><u>Storia dell'Erebo</u></b></a></li>
+                    </ol>
+                </p>
+            </div></div>
 
 
-	
+            <p class="title">Erebo </p>    
+            <div class="main-contentBg"><div class="main-content"><div>
 
+            <!-- Paragrafo -->
 
+                <p class="argument" style="top: 10px;"><b>
+                    L'Erebo è uno dei piani più oscuri e misteriosi di Talagi, situato sotto il Talassis, il piano
+                    materiale. Un luogo dove la magia fluisce in modo incontrollato, il tempo è distorto e le
+                    profondità nascondono antiche rovine, creature mutanti e piante rare.
+                </b></p>
+            
+            <!-- Paragrafo -->
 
-		<p class="art1">
-		<b>
-		Il mondo di Talagi si divide in tre piani distinti, ciascuno 
-								con caratteristiche che influenzano la vita e la storia del pianeta in modo unico
-								e complesso. L’Erebo, il più oscuro di questi, si estende sotto il Talassis, il
-								piano materiale. È un luogo di misteri, dove il tempo stesso sembra distorto, e la 
-								magia fluisce con potenza incontrollata. Le sue profondità contengono antiche rovine,
-								creature mutanti e piante rare, tutte adattate a vivere in un ambiente senza luce e 
-								dominato dal potere arcano.
-		</b>
-		</p>
+                <p class="subtitle1" id="1">
+                Geografia dell'Erebo
+                &nbsp&nbsp&nbsp
+                </p>
+                
+                <p class="subtitle2" id="1.1">
+                Città Perdute e Antri Cristallini
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Le caverne dell'Erebo nascondono città perdute costruite da razze antiche come i Quentuv
+                    (drow), i Druzmhiir (tiefling bianchi) e i Tyrgaals (giganti del sottosuolo). Questi insediamenti,
+                    scolpiti nella roccia o con materiali magici come il Vherossium, sono ora abbandonati, preda di
+                    creature malvagie.<br>
+                    Gli Antri Cristallini sono cavità dove il contatto con l'energia magica ha creato enormi cristalli
+                    luminosi che illuminano la strada degli esploratori.
+                </p>
+                
+                <p class="subtitle2" id="1.2">
+                Labirinti dei Grovliyr
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Il piano è anche attraversato da estesi labirinti sotterranei scavati da gigantesche creature
+                    chiamate Grovliyr, le cui tane si estendono per chilometri e portano a luoghi proibiti e
+                    dimenticati.
+                </p>
+                
+                <p class="subtitle2" id="1.3">
+                Mari Sottosopra
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    I Mari Sottosopra sono oceani sotterranei sospesi che si trovano sotto le masse d'acqua del
+                    Talassis. Questi mari rovesciati ospitano misteriose creature colossali, simili a leviatani, che si
+                    spostano tra i due piani.
+                </p>
+            
+            <!-- Paragrafo -->
 
-		<!--  SOTTOTITOLO  -->
+                <p class="subtitle1" id="2">
+                Fauna dell'Erebo    
+                &nbsp&nbsp&nbsp
+                </p>
+                
+                <p class="subtitle2" id="2.1">
+                Bestie Soprannaturali e Creature Mutanti
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Le creature che abitano l'Erebo si sono adattate alla sua oscurità e al suo potere magico
+                    caotico. Gli Othurrax sono demoni antropomorfi che praticano rituali magici in luoghi isolati,
+                    mentre i Thruv'kos sono colossi coperti di stalattiti viventi che proteggono passaggi antichi.
+                    Gli Othurrax sono considerati tra le razze più temute nell'Erebo, per la loro intelligenza e la
+                    loro crudeltà.                       
+                </p>
+                
+                <p class="subtitle2" id="2.2">
+                Creature Magiche
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    I Vormuhr sono esseri eterei che si nutrono di paura. Invisibili agli occhi normali, possono
+                    essere percepiti solo da chi possiede poteri magici.  
+                </p>
+            
+            <!-- Paragrafo -->
 
-		<div id="1" class="sott" style="margin-top: 400px;">Geografia</div>
-		<hr class="lineaSott">
-			<p class="articolo" style="margin-bottom: 0px;">
-			L’Erebo è un labirinto di caverne interconnesse, canyon sotterranei, e vasti laghi neri che si snodano nelle viscere 
-						 del Talassis. Questo mondo oscuro è caratterizzato da diverse regioni, ciascuna con le proprie peculiarità geologiche 
-						 e goemiche(magiche). Alcuni di questi luoghi sono dimore di antiche città sotterranee, costruite da popoli perduti. 
-						 Altri ospitano potenti fonti di energia magica che distorcono la realtà stessa.
-		</p>
-		
+                <p class="subtitle1" id="3">
+                Vegetazione Magica
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    L'Erebo ospita numerose piante rare e letali, adattate all'ambiente magico e oscuro:
+                    <br><br>
+                    <b>Lahmrót:</b> Pianta che assorbe l'energia magica e i cui fiori sono velenosi, ma preziosi per la
+                    creazione di antidoti.
+                    <br><br>
+                    <b>Feylindur:</b> Rampicante curativo che cresce solo in terreni impregnati di sangue antico.
+                    <br><br>
+                    <b>Barglithor:</b> Fungo gigante che emette spore tossiche, usato per incantamenti legati alle
+                    percezioni.
+                </p>
+                
+                <p class="subtitle1" id="4">
+                Magia dell'Erebo
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    L'Erebo è intriso di magia caotica e instabile. Le Varchi del Vuoto sono fessure dimensionali
+                    attraverso cui l'energia magica scorre liberamente, creando distorsioni spazio-temporali. I Nodi
+                    Arcani sono punti di concentrazione di potere che deformano la realtà circostante, dove le leggi
+                    fisiche non sono più valide.
+                    <br><br>
+                    La magia dell'Erebo è una delle più pericolose da manipolare, e chi osa usarla deve stare
+                    attento a non farla sfuggire di controllo.
+                </p>
+                
+                <p class="subtitle1" id="5">
+                Storia dell'Erebo
+                &nbsp&nbsp&nbsp
+                </p>
+                <p class="argument">
+                    Prima della grande catastrofe dei 13 Raggi Divini, l'Erebo era solo una leggenda. Dopo la
+                    distruzione dei continenti, molte razze si rifugiarono nell'Erebo, creando nuove culture e civiltà.
+                    Tra le più influenti vi erano i Druzmhiir, maestri della forgiatura e della manipolazione magica
+                    dei metalli, le cui creazioni sono scomparse insieme alla loro civiltà.
+                </p>
 
-		<!--  SOTTOTITOLO  -->
-
-		<div id="2" class="sott">Città Perdute e Antri Cristallini</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			 In alcune delle caverne più ampie si trovano i resti di grandi città perdute, costruite da razze antiche come 						 
-						<a href="Razze.html">
-						<font face="Helvetica" size="4" color="#3f5736"><u>i Quentuv (drow), i Druzmhiir (tiefling bianchi) e i Tyrgaals (giganti del sottosuolo)</u></font></a>
-						 . Queste città furono 
-						 costruite in epoche lontane, scolpite direttamente nella roccia o forgiate con materiali magici rari, come il 
-						 Vherossium, un metallo che assorbe la luce. Molti di questi insediamenti sono ormai abbandonati, preda di creature 
-						 che si sono impossessate delle strutture decadenti. Tra i luoghi più spettacolari vi sono gli Antri Cristallini, 
-						 cavità dove le rocce hanno cristallizzato a contatto con l’energia magica del piano, creando enormi colonne di quarzo 
-						 luminescente. In queste caverne, l'atmosfera è satura di un bagliore freddo e pallido, che illumina la strada agli 
-						 esploratori e riflette in intricate formazioni geometriche. 
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="3" class="sott">I Labirinti del Grovlyr</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			L'Erebo non è costituito solo da caverne naturali; ci sono anche estesi labirinti sotterranei creati dalle Grandi
-						 Bestie delle Profondità, creature gigantesche chiamate Grovliyr, che hanno scavato le loro tane per millenni. 
-						 Questi tunnel, ora deserti o abitati da nuove forme di vita, si estendono per chilometri, attraversando interi 
-						 continenti e portando a luoghi proibiti o sigillati da eoni.
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="4" class="sott">I Mari Sottosopra</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			Una delle meraviglie più uniche dell'Erebo sono i cosiddetti "Mari Sottosopra". Questi sono vasti oceani sotterranei 
-						sospesi, creati dall'enorme pressione esercitata dagli oceani superiori del Talassis. In alcune aree dell'Erebo, le 
-						caverne si trovano sotto queste masse d’acqua, che formano delle cupole ribaltate. Gocce d’acqua enormi si staccano 
-						dalle "volte marine" e cadono nelle profondità, creando laghi sotterranei o fiumi che scorrono lenti e inesorabili. 
-						La fauna di questi mari rovesciati è perlopiù sconosciuta, ma si narra di creature colossali, simili a leviatani, 
-						che vi abitano, capaci di spostarsi tra i due piani.
-		</p>
-
-		
-		<!--  SOTTOTITOLO  -->
-
-		<div id="5" class="sott">Fauna dell’Erebo</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			La vita nell'Erebo si è adattata alla sua oscurità e ai suoi pericoli. Alcune creature hanno sviluppato abilità 
-						sovrannaturali, altre si affidano alla forza bruta per sopravvivere. La varietà di specie presenti è tanto vasta
-						quanto bizzarra, con animali che sembrano sfidare le leggi della biologia comunemente note sul piano materiale. 
-						Bestie Soprannaturali e Creature Mutanti Una delle razze più temute dell’Erebo sono gli Othurrax, demoni antropomorfi
-						con zoccoli caprini e corna ricurve, simili a caproni da incubo. Questi esseri, tutt’altro che primitivi, sono
-						dotati di una brutale intelligenza e di una crudeltà senza pari. I loro rituali magici spesso coinvolgono sacrifici
-						e la manipolazione di antiche energie abissali. Gli Othurrax, infatti, dominano molte delle regioni più inospitali 
-						dell’Erebo, erigendo città di ossa e rocce nere che si fondono con l'oscurità circostante. I Thruv'kos sono un'altra 
-						delle minacce costanti nell’Erebo. Si tratta di colossi dalle fattezze vagamente umanoidi, ricoperti di stalattiti viventi
-						che crescono direttamente dal loro corpo. Queste creature sono lente, ma incredibilmente resistenti. Si muovono come 
-						montagne in marcia e spesso fungono da guardiani di antichi passaggi dimenticati o di tesori nascosti.
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="6" class="sott">Creature Magiche</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			Tra le aberrazioni più note dell’Erebo vi sono i **Vormuhr**, creature eteree che si nascondono tra le ombre e 
-						 vivono nutrendosi della paura. I Vormuhr sono invisibili agli occhi normali e possono essere percepiti solo da 
-						 coloro che possiedono poteri magici o particolari artefatti. Quando attaccano, si materializzano come ombre 
-						 fluttuanti, simili a drappi di seta scura, e risucchiano la vitalità delle loro vittime.
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="7" class="sott">Piante Rare e Letali</div>
-		<hr class="lineaSott">
-			<p class="articolo"  style="margin: 0px;">
-			La Vegetazione Magica La flora dell’Erebo è altrettanto misteriosa e pericolosa. Senza la luce del sole, 
-								la vegetazione si è evoluta in forme uniche, capaci di sfruttare la magia del piano per crescere e prosperare.
-								
-								<ul>
-									<li>
-									Lahmrót: Questa pianta cresce solo nelle profondità più remote dell'Erebo, assorbendo l'energia 
-									residua delle magie ancestrali. I suoi fiori neri sono altamente velenosi, ma anche incredibilmente 
-									preziosi, poiché possono essere usati per creare antidoti contro le maledizioni magiche.
-
-									</li>
-									<br>
-									<li>
-									Feylindur: Un rampicante che si avvolge attorno alle pareti delle caverne, il Feylindur emette una tenue 
-									luminescenza verde e possiede proprietà curative. Si dice che le sue foglie siano in grado di guarire anche 
-									le ferite più gravi, ma le sue radici crescono solo in terreni imbevuti di sangue antico.
-									</li>
-									<br>
-									<li>
-									Barglithor: Questo fungo gigantesco emette spore tossiche che possono causare allucinazioni a chiunque ne inali 
-									anche solo una minima quantità. È spesso utilizzato dai maghi e dagli alchimisti per incantamenti 
-									legati alla manipolazione delle percezioni.<br><br><br>
-									</li>
-								</ul>
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="8" class="sott">Magia dell’Erebo</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			L’Erebo è intriso di magia, ma non di una magia prevedibile e controllabile come quella del Talassis. Qui la magia è caotica,
-						 instabile, e segue le proprie regole. Nelle aree più profonde, esistono **Varchi del Vuoto**, fessure dimensionali attraverso
-						 cui l’energia magica scorre liberamente, creando distorsioni spazio-temporali. Alcuni dicono che questi varchi siano collegati
-						 direttamente alla Coelistia, il piano delle divinità, o ad altre dimensioni sconosciute. I **Nodi Arcani** sono punti di 
-						 concentrazione di potere che deformano la realtà circostante. In questi luoghi, le leggi della fisica sembrano non esistere: 
-						 la gravità può invertirsi, il tempo può rallentare o accelerare, e incantesimi banali possono scatenare reazioni catastrofiche.
-		</p>
-
-		<!--  SOTTOTITOLO  -->
-
-		<div id="9" class="sott">Storia Antica dell’Erebo</div>
-		<hr class="lineaSott">
-			<p class="articolo">
-			Prima della grande catastrofe dei 13 Raggi Divini, l’Erebo era solo una leggenda per gli abitanti del Talassis. Tuttavia,
-						dopo la distruzione dei continenti, molte razze si rifugiarono nell’Erebo, cercando riparo dalla devastazione. Durante i 
-						"200 Anni di Tenebra", gli abitanti dell’Erebo prosperarono e diedero vita a culture uniche e complesse, sviluppando tecnologie e 
-						magie che non esistono altrove. Tra le civiltà più influenti vi erano i **Druzmhiir**, maestri della forgiatura e della manipolazione 
-						magica dei metalli. Costruirono macchine viventi, alimentate da fonti magiche inesauribili, e crearono alcune delle armi più potenti mai 
-						conosciute. Tuttavia, la loro civiltà crollò per ragioni sconosciute, e i segreti delle loro forge sono stati perduti.
-		</p>
-
-
-
-	
-
-
-		<div class="spazioCont"><center>Potrebbe interessarti:</center></div>
-		<div class="marquee"><p>
-		<table border="0" width="100%" class="cont">
-			<tr height="300px">
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Regni.html">
-					<img src="Img/Stemmi/RegniStemmi.png" width="200px">
-					</a>
-					</img></center>
-				</td>
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Bildova.html">
-					<img src="Img/Icone/città.png" width="200px">
-					</a>
-					</img></center>
-				</td>
-				<td colspan="1" bgcolor="white" class="1">
-					<center>
-					<a href="Magia.html">
-					<img src="Img/Icone/Magia.png" width="200px">
-					</a>
-					</img></center>
-					</td>
-			</tr>
-			<tr>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Regni</center>
-					</font>
-				</td>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Bildova</center>
-					</font>
-				</td>
-				<td width="400px" colspan="1" bgcolor="#103956">
-					<font face="Helvetica" color="white" size="4">
-					<center>Magia</center>
-					</font>
-				</td>
-			</tr>
-			</table>
-		</p></div>
-		<img class="stan" src="Img/Razze/Quentuv.jpg" style="top: 120px; width: 300px;"></img>
-		<p class="desc" style="top: 550px;">Esempio di Quentuv</p>
-		<img class="stan" src="Img/Razze/Tiefling.jpg" style="top: 1000px; width: 300px;"></img>
-		<p class="desc" style="top: 1440px;">Esempio di Tiefling</p>
-		<img class="stan" src="Img/Razze/Costrutto.jpg" style="top: 2000px; width: 400px;"></img>
-		<p class="desc" style="top: 2290px;">Esempio di Costrutto</p>
-	</body>
-
+                <p class="recommended">Potrebbe interessarti:</p>                
+                <div class="recommend">
+                    <a href="Textus.html">   
+                    <div class="recommend-wrap">
+                        <img src="Img/Icons/Magic.png">
+                        <p>Textus</p>
+                    </div></a>
+            </div></div><div>
+            
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="checkbox" id="darkModeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div> 
+            </div>
+            
+            <script src="Scripts/Autocomplete.js"></script>
+            <script src="Scripts/Darkmode.js"></script>
+            <script src="Scripts/ImageScroll.js" data-scroll-thresholds="0"></script>
+            <script src="Scripts/CookieAlert.js"></script>
+        </div>
+    </body>
 </html>
